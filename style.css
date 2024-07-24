@@ -34,9 +34,10 @@ nav a {
 nav a:hover {
   background-color: #f0f0f0;
 }
-nav li:first-child {
+nav .navbar li:first-child {
   margin-right: auto;
 }
+
 .sidebar {
   position: fixed;
   top: 0px;
@@ -52,6 +53,9 @@ nav li:first-child {
   justify-content: flex-start;
   backdrop-filter: blur(10px);
 }
+.test {
+  display: none;
+}
 .sidebar li {
   width: 100%;
 }
@@ -62,7 +66,11 @@ nav li:first-child {
   .hideOnMobile {
     display: none;
   }
+  .test {
+    display: flex;
+  }
 }
+
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;

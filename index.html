@@ -13,9 +13,9 @@
   <body>
     <nav>
       <ul class="sidebar">
-        <li>
-          <a href="#"
-            ><i class="bx bx-x" style="font-size: 24px; color: red"></i
+        <li onclick="closeSideBar()">
+          <a href="#">
+            <i class="bx bx-x" style="font-size: 24px; color: red"></i
           ></a>
         </li>
         <li><a href="#">Blog</a></li>
@@ -24,14 +24,17 @@
         <li><a href="#">Form</a></li>
         <li><a href="#">Login</a></li>
       </ul>
-      <ul>
+
+      <ul class="navbar">
         <li><a href="#">GomycodeLogo</a></li>
         <li class="hideOnMobile"><a href="#">Blog</a></li>
         <li class="hideOnMobile"><a href="#">Products</a></li>
         <li class="hideOnMobile"><a href="#">About</a></li>
         <li class="hideOnMobile"><a href="#">Form</a></li>
-        <li class="hideOnMobile"><a href="#">Login</a></li>
-        <li>
+        <li class="hideOnMobile" onclick="openSideBar()">
+          <a href="#">Login</a>
+        </li>
+        <li class="test">
           <a href="#"><i class="bx bx-menu" style="font-size: 26px"></i></a>
         </li>
       </ul>
