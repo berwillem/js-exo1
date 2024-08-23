@@ -53,6 +53,7 @@ nav .navbar li:first-child {
   justify-content: flex-start;
   backdrop-filter: blur(10px);
 }
+
 .test {
   display: none;
 }
@@ -62,7 +63,21 @@ nav .navbar li:first-child {
 .sidebar a {
   width: 100%;
 }
+
+#open {
+  display: none;
+}
+
 @media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  #open {
+    display: flex;
+  }
+}
+
+/* @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
   }
@@ -75,4 +90,4 @@ nav .navbar li:first-child {
   .sidebar {
     width: 100%;
   }
-}
+} */
